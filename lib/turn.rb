@@ -45,6 +45,7 @@ if validity == false
   turn(board)
 elsif validity == true
   move(board, user_index)
+  puts board
 end
 
 end
