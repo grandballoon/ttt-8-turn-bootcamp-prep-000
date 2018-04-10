@@ -32,7 +32,7 @@ def input_to_index(user_input)
   index = input_int - 1
 end
 
-def move (board, index, token)
+def move (board, index, token = "X")
   board[index] = token
 end
 
@@ -44,7 +44,7 @@ validity = valid_move?(board, user_index)
 if validity == false
   turn(board)
 elsif validity == true
-  move(board, user_index, token = "X")
+  move(board, user_index, token)
 end
 
 end
