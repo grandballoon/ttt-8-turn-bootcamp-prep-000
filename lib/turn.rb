@@ -41,6 +41,8 @@ def turn (board)
 user_move = gets.strip
 user_index = input_to_index(user_move)
 validity = valid_move?(board, user_index)
-
+if validity == true
+  move(board, index, token)
+  
 
 end
