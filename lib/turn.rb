@@ -42,6 +42,7 @@ user_move = gets.strip
 user_index = input_to_index(user_move)
 if valid_move?(board, user_index) == true
   move
+  puts board 
 elsif valid_move?(board, user_index) == false
   turn
 end
