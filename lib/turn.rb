@@ -30,5 +30,6 @@ if board[index] == " " || board[index] == "" || board[index] == nil
 end
 
 def input_to_index(user_input)
+  input_int = user_input.to_i
   index = user_input - 1
 end
