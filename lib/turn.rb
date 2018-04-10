@@ -44,7 +44,7 @@ validity = valid_move?(board, user_index)
 if validity == false
   turn(board)
 elsif validity == true
-  move(board, index, token)
+  move(board, user_index, token)
 end
 
 end
