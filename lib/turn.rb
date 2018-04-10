@@ -43,6 +43,7 @@ user_index = input_to_index(user_move)
 validity = valid_move?(board, user_index)
 index = user_index
 if validity == false
+  turn(board)
 end
 
 end
