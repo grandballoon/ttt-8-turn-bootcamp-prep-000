@@ -31,5 +31,5 @@ end
 
 def input_to_index(user_input)
   input_int = user_input.to_i
-  index = user_input - 1
+  index = input_int - 1
 end
