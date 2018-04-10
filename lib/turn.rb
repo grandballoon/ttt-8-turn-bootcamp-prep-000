@@ -16,9 +16,7 @@ elsif index.between?(0,8) == true && position_taken?(board,index) == false
 end
 end
 
-def move (board, index, token)
-  board[index] = token
-end
+
 
 def position_taken?(board, index)
 if board[index] == " " || board[index] == "" || board[index] == nil
@@ -32,4 +30,8 @@ end
 def input_to_index(user_input)
   input_int = user_input.to_i
   index = input_int - 1
+end
+
+def move (board, index, token)
+  board[index] = token
 end
