@@ -42,8 +42,7 @@ user_move = gets.strip
 user_index = input_to_index(user_move)
 validity = valid_move?(board, user_index)
 index = user_index
-if validity == true
-  move(board, index, token)
+if validity == false
 end
 
 end
