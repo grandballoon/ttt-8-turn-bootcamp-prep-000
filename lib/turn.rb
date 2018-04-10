@@ -41,10 +41,10 @@ def turn (board)
 user_move = gets.strip
 user_index = input_to_index(user_move)
 validity = valid_move?(board, user_index)
-if validity == true
+if validity 
   move(board, user_index)
   puts board
-elsif validity == false
+else
   turn(board)
 end
 
